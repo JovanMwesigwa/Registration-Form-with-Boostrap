@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Login Page</title>
+
+    <style>
+        body, html{
+            height: 100%;
+            color: #ffffff;
+
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .bg-image{
+            /*insert the image throught the container*/
+            background-image: url("images/picture-1.jpg");
+
+            /*resize the height of the image*/
+            min-height: 150%;
+
+            /*Puts the image in the center and scales it properly*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .container-2{
+            position: absolute;
+            left: 20%;
+            text-transform: capitalize;
+        }
+        .container{
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+        }
+        .text{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .userNameField,.emailField,.passwordField,.C-passwordField{
+            width: 300%;
+            padding: 5px;
+            margin: 2px 0 12px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .userNameField:focus,.emailField:focus,.passwordField:focus,.C-passwordField:focus{
+            background-color: #dddddd;
+            outline: none;
+        }
+        .btn{
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .container-3{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            width: 800px;
+        }
+        #text{
+            font-size: 40px;
+            
+
+        }
+        .text-wrapper{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+        <div class="bg-image">
+
+            <div class="container">
+
+                <form action="form-action" class="container-2">
+                    <div class="text-wrapper">
+                        <h1 id="text">Register Here</h1>
+                    </div>
+
+                    <div class="userNameLabel-wrapper">
+                        <label for="userName">User Name:</label>
+                    </div>
+                    <div class="userNameField-wrapper">
+                        <input type="text" class="userNameField">
+                    </div>
+                    <div class="emailLabel-wrapper">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="emailField-wrapper">
+                        <input type="email" class="emailField">
+                    </div>
+                    <div class="passwordLabel-wrapper">
+                        <label for="password">password:</label>
+                    </div>
+                    <div class="passwordField-wrapper">
+                        <input type="password" class="passwordField">
+                    </div>
+                    <div class="confirmPasswordLabel-wrapper">
+                        <label for="confirmPassword">Confirm Password:</label>
+                    </div>
+                    <div class="C-passwordField-wrapper">
+                        <input type="password" class="C-passwordField">
+                    </div>
+                    <div class="checkboxLabel-wrapper">
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox">
+                    </div>
+                    <div class="button-wrapper">
+                        <button type="submit" class="btn btn-success">SignUp</button>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    
+</body>
+</html>
